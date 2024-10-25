@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url("img/keith-misner-h0Vxgz5tyXA-unsplash.jpg") no-repeat center center fixed;
+            background-size: cover;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td {
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            select {
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            .green-bg {
+                background-color: #98FB98;
+            }
+
+            .blue-bg {
+                background-color: #87CEEB;
+            }
+
+            #submitButton {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            .submit-btn {
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #ff0000;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .submit-btn:hover {
+                background-color: #ff0000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav justify-content-center ">
+        <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="register.html">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="login.html">Login</a>
+        </li>
+    </ul>
+
+    </header>
+    <div class="judul-regist text-center text-white">
+        <h2>Form Pendaftaran</h2>
+    </div>
+    <table>
+        <tr>
+            <td class="green-bg">Nama Depan</td>
+            <td class="green-bg" colspan="2"><input type="text" required></td>
+            <td class="blue-bg">Nama Belakang</td>
+            <td class="blue-bg" colspan="2"><input type="text" required></td>
+        </tr>
+        <tr>
+            <td class="green-bg">Alamat</td>
+            <td class="green-bg" colspan="2"><input type="text" required></td>
+            <td class="blue-bg">E-mail</td>
+            <td class="blue-bg" colspan="2"><input type="email" required></td>
+        </tr>
+        <tr>
+            <td class="green-bg">No HP</td>
+            <td class="green-bg" colspan="2"><input type="number" required></td>
+            <td class="blue-bg">Agama</td>
+            <td class="blue-bg" colspan="2">
+                <select required>
+                    <option value="">--Silahkan pilih--</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="green-bg">Pekerjaan</td>
+            <td class="green-bg" colspan="2">
+                <select required>
+                    <option value="">--Silahkan Pilih--</option>
+                    <option value="Swasta">Swasta</option>
+                    <option value="PNS">PNS</option>
+                    <option value="TNI">TNI</option>
+                    <option value="Polri">Polri</option>
+                    <option value="Dokter">Dokter</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="DPR">DPR</option>
+                    <option value="Guru">Guru</option>
+                    <option value="Dosen">Dosen</option>
+                </select>
+            </td>
+            <td class="blue-bg">Jenis Kelamin</td>
+            <td class="blue-bg" colspan="2">
+                <select required>
+                    <option value="">--Silahkan pilih--</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="green-bg">NIK / No KTP</td>
+            <td class="green-bg" colspan="2"><input type="number" required></td>
+            <td class="blue-bg">Url Facebook</td>
+            <td class="blue-bg" colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="green-bg">Url Website</td>
+            <td class="green-bg" colspan="2"><input type="text"></td>
+            <td class="blue-bg">Url Instagram</td>
+            <td class="blue-bg" colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="green-bg">Nama Ayah</td>
+            <td class="green-bg" colspan="2"> <input type="text"></td>
+            <td class="blue-bg">Nama Ibu</td>
+            <td class="blue-bg" colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="green-bg">Alamat Ayah</td>
+            <td class="green-bg" colspan="2"><input type="text"></td>
+            <td class="blue-bg">Alamat Ibu</td>
+            <td class="blue-bg" colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="green-bg">Pekerjaan Ayah</td>
+            <td class="green-bg" colspan="2">
+                <select required>
+                    <option value="">--Silahkan Pilih--</option>
+                    <option value="Swasta">Swasta</option>
+                    <option value="PNS">PNS</option>
+                    <option value="TNI">TNI</option>
+                    <option value="Polri">Polri</option>
+                    <option value="Dokter">Dokter</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="DPR">DPR</option>
+                    <option value="Guru">Guru</option>
+                    <option value="Dosen">Dosen</option>
+                </select>
+            <td class="blue-bg">Pekerjaan Ibu</td>
+            <td class="blue-bg" colspan="2">
+                <select required>
+                    <option value="">--Silahkan Pilih--</option>
+                    <option value="Swasta">Swasta</option>
+                    <option value="PNS">PNS</option>
+                    <option value="TNI">TNI</option>
+                    <option value="Polri">Polri</option>
+                    <option value="Dokter">Dokter</option>
+                    <option value="Programmer">Programmer</option>
+                    <option value="DPR">DPR</option>
+                    <option value="Guru">Guru</option>
+                    <option value="Dosen">Dosen</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="green-bg">Penghasilan Ayah</td>
+            <td class="green-bg" colspan="2"><input type="text"></td>
+            <td class="blue-bg">Penghasilan Ibu</td>
+            <td class="blue-bg" colspan="2"><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="green-bg">No HP Ayah</td>
+            <td class="green-bg" colspan="2"><input type="number"></td>
+            <td class="blue-bg">No HP Ibu</td>
+            <td class="blue-bg" colspan="2"><input type="number"></td>
+        </tr>
+    </table>
+    <button type="submit" class="submit-btn">Submit</button>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
